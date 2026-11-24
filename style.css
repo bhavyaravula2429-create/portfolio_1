@@ -1,0 +1,193 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #100d1c;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 22px 8%;
+    background: #171328;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #b58aff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #b58aff;
+}
+
+.hero {
+    min-height: 480px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 8%;
+    gap: 30px;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.welcome {
+    color: #b58aff;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #b58aff;
+}
+
+.hero-text p {
+    line-height: 1.8;
+    color: #c5bed4;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 25px;
+    background: #8655db;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.btn:hover {
+    background: #a77bf0;
+}
+
+.circle {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #8655db, #251b43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    box-shadow: 0 0 45px #8655db66;
+}
+
+section {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #b58aff;
+}
+
+section p {
+    color: #c5bed4;
+    line-height: 1.8;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #1e1930;
+    padding: 25px;
+    border: 1px solid #39304f;
+    border-radius: 15px;
+    flex: 1 1 200px;
+    max-width: 300px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #a77bf0;
+}
+
+.card h3 {
+    color: #d2b8ff;
+    margin-bottom: 12px;
+}
+
+footer {
+    background: #171328;
+    text-align: center;
+    padding: 25px;
+    color: #aaa;
+}
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .circle {
+        width: 170px;
+        height: 170px;
+        font-size: 75px;
+    }
+}
+
+#achievements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#achievements .card {
+    width: 100%;
+    max-width: 350px;
+    flex: none;
+}
